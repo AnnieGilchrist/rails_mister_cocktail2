@@ -1,0 +1,24 @@
+<div class="ct-navbar">
+  <!-- Logo -->
+  <%= link_to cocktails_path, class: "navbar-home" do %>
+    <i class="fas fa-heart"></i>
+    <p>home</p>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-right">
+
+      <!-- Links when logged in -->
+    <div class="input-group stylish-input-group">
+      <input type="text" class="form-control"  placeholder="Search" >
+      <span class="input-group-addon">
+        <button type="submit">
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
+      </span>
+    </div>
+
+    <%= link_to "Add New", new_cocktail_path , class: "btn btn-pink" %>
+
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<%= simple_form_for [@cocktail], class: "new-form" do |f| %>
+  <%= f.input :name %>
+  <%= f.input :image_url %>
+  <%= f.submit "Add a cocktail", class: "btn btn-form" %>
+<% end %>

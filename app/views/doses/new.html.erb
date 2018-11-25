@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="form-container">
+    <h1>Create a new dose for <%= @cocktail.name %></h1>
+    <div class="container">
+      <%= render "form" %>
+      <br>
+      <%= link_to "Back to cocktail", cocktail_path(@cocktail) %>
+    </div>
+  </div>
+</div>
